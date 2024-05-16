@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOME</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-ui-bootstrap/0.5pre/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+</head>
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+39&family=Roboto+Mono&family=Ubuntu&display=swap");
+
+body {
+  font-family: "Ubuntu", monospace;
+  color: #FFF;
+  background-color: #f7f2f2;
+}
+
+.jarallax {
+  position: relative;
+  z-index: 0;
+}
+
+.jarallax > .jarallax-img {
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+</style>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax-video.min.js"></script>
+
+<div class="container">
+<div class="jarallax">
+  <div class="jarallax" data-jarallax data-video-src="https://youtu.be/A7wUrakeQfY?si=FwBtQRHdLlq9mhL5" id="jarallax-bg">
+    <header class="p-3 text-white">
+      <div class="container bg-secondary bg-gradient">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"><i class="fa-brands fa-bootstrap fa-beat fa-lg"></i>
+          </a> &nbsp;
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="{% url 'Teamates_5' %}" class="nav-link px-2 text-warning">FOUNDERS</a></li>
+            <li><a href="{% url 'Domain_Result_6' %}" class="nav-link px-2 text-warning">DOMAIN</a></li>
+            <li><a href="{% url 'Problem_Statement_7' %}" class="nav-link px-2 text-warning">INNOVATIONS</a></li>
+          </ul>
+
+          <div class="text-end">
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+
+              <li><a href="{% url 'Per_Info_8' %}" class="nav-link px-2 text-warning">INFO</a><li></li>
+              <li><a href="{% url 'Per_Database_10' %}" class="nav-link px-2 text-warning">DATABASE</a></li>
+              <li><a href="{% url 'Deploy_9' %}" class="nav-link px-2 text-warning">GENERATIONS</a></li>
+              <li><a href="{% url 'Deploy_10' %}" class="nav-link px-2 text-warning">RADIATIONS</a></li>
+
+              <li><a href="{% url 'Logout' %}" class="nav-link px-2 text-warning">LOGOUT</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="px-4 py-5 my-5 text-center">
+      <h1><i class="fa-brands fa-bootstrap"></i> SOLAR POWER </h1>
+      <h2>GENERATION</h2>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">Solar power generation harnesses sunlight to produce electricity, using photovoltaic cells or solar panels. These panels convert sunlight into direct current (DC) electricity. An inverter then transforms this into alternating current (AC), suitable for use in homes and businesses. Solar power is a sustainable and renewable energy source, reducing reliance on fossil fuels and lowering carbon emissions.</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="jarallax">
+  <div class="jarallax" data-jarallax data-video-src="https://youtu.be/alQFVKYLwT0?si=dzEcbMJkJ8wFl5lu" id="jarallax-bg">
+    <div class="px-4 py-5 my-5 text-center">
+      <h1><i class="fa-brands fa-bootstrap"></i> SOLAR POWER</h1>
+      <h2>RADIATIONS</h2>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">Solar power radiations are electromagnetic waves emitted by the sun, encompassing visible light, infrared, and ultraviolet rays. These radiations drive various renewable energy technologies like photovoltaic cells and solar thermal systems, offering sustainable alternatives to traditional energy sources. Harnessing solar power radiations holds significant potential for reducing carbon emissions and mitigating climate change impacts.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<script>
+
+
+import { jarallax, jarallaxVideo } from 'jarallax';
+
+jarallax(document.querySelectorAll('.jarallax'), {
+  speed: 0.2,
+});
+
+jarallaxVideo();
+
+jarallax(document.querySelectorAll('.jarallax'), {
+  speed: 0.2,
+  videoSrc: 'https://youtu.be/A7wUrakeQfY?si=FwBtQRHdLlq9mhL5'
+});
+</script>
+</body>
+</html>
